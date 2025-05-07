@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-dark-font text-white flex justify-between p-8 items-center lg:px-24">
-      <div>&copy; 2025 reggieevans.dev</div>
+      <div>&copy; 2025 reggieevans.me</div>
       <div className="flex">
         <div>
           <a
