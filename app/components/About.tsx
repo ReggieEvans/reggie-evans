@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-dark-font flex flex-col justify-center py-36 px-8 w-full lg:flex-row lg:px-24">
+    <div className="bg-dark flex flex-col justify-center py-36 px-8 w-full lg:flex-row lg:px-24">
       <div className="flex justify-center min-w-1/2">
         <Image
-          className="rounded-t-xl"
+          className="rounded-md"
           src="/images/profile-photo.jpg"
           width={400}
           height={460}

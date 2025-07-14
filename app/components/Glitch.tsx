@@ -1,10 +1,10 @@
-const Glitch = () => {
+const Glitch = ({text}: {text: string}) => {
   return (
     <div
       className="hero glitch layers font-[anotherDanger] text-center"
-      data-text="REGGIE EVANS"
+      data-text={text}
     >
-      <span className="text-nowrap">REGGIE EVANS</span>
+      <span className="text-nowrap">{text}</span>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 /* Glitch Text  */
 .hero {
-  font-size: 40px;
+  /* font-size: 40px; */
   font-family: AnotherDanger;
   font-weight: bold;
   line-height: 1;
@@ -468,8 +468,6 @@
 }
 
 .subtitle {
-  font-size: 20px;
-  /* font-weight: bold; */
   background: -webkit-linear-gradient(
     45deg,
     rgba(68, 94, 242, 0.5),
@@ -478,30 +476,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  letter-spacing: 5px;
   text-align: center;
   margin-top: 16px;
   margin-left: 3px;
-}
-
-@media (width >= 40rem) {
-  .hero {
-    font-size: 70px;
-  }
-
-  .subtitle {
-    font-size: 30px;
-    letter-spacing: 8px;
-  }
-}
-
-@media (width >= 64rem) {
-  .hero {
-    font-size: 100px;
-  }
-
-  .subtitle {
-    font-size: 35px;
-    letter-spacing: 15px;
-  }
 }
