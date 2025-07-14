@@ -1,6 +1,7 @@
 const Connect = () => {
   return (
-    <div className="flex flex-col justify-center py-24 px-8 w-full text-center">
+    <>
+    <div className="flex flex-col justify-center py-24 px-8 w-full text-center bg-dark">
       <div className="px-4 py-20 text-white">
         <h2 className="text-4xl font-black uppercase text-center">
           Let&apos;s Connect!
@@ -19,7 +20,7 @@ const Connect = () => {
           <a href="mailto:revans911@gmail.com" className="cursor-pointer">
             <button
               type="button"
-              className="text-white bg-gradient-to-r from-pink to-red hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-blue rounded-md px-5 py-2.5 text-center me-2 mb-2 text-lg font-bold min-w-[250px] shadow cursor-pointer"
+              className="text-white bg-gradient-to-br from-pink to-red hover:brightness-125 focus:ring-2 focus:outline-none focus:ring-blue rounded-md px-5 py-2.5 text-center me-2 mb-2 text-lg font-bold min-w-[250px] shadow cursor-pointer transition-all duration-300"
             >
               Contact Me
             </button>
@@ -27,6 +28,8 @@ const Connect = () => {
         </div>
       </div>
     </div>
+        {/* <div className="text-white bg-linear-to-r to-yellow from-blue h-[1px] w-full"></div> */}
+        </>
   );
 };
 

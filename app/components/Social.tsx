@@ -17,7 +17,7 @@ const Social = () => {
           href="https://www.linkedin.com/in/reggie-evans-631b3753/"
           target="_blank"
         >
-          <div className="lg:border-2 lg:border-yellow w-[48px] h-[48px] text-xl flex justify-center items-center brightness-75 text-blue hover:brightness-125 cursor-pointer">
+          <div className="lg:border-2 lg:border-yellow w-[48px] h-[48px] text-xl flex justify-center items-center brightness-75 text-blue hover:brightness-125 cursor-pointer rounded-md">
             <FaLinkedin />
           </div>
         </a>
@@ -26,7 +26,7 @@ const Social = () => {
           <div className="h-[1px] bg-linear bg-yellow"></div>
         </div>
         <a href="https://github.com/ReggieEvans" target="_blank">
-          <div className="lg:border-2 lg:border-yellow w-[48px] h-[48px] text-xl flex justify-center items-center brightness-75 text-blue hover:brightness-125 cursor-pointer">
+          <div className="lg:border-2 lg:border-yellow w-[48px] h-[48px] text-xl flex justify-center items-center brightness-75 text-blue hover:brightness-125 cursor-pointer rounded-md">
             <FaGithub />
           </div>
         </a>
@@ -34,7 +34,7 @@ const Social = () => {
           <div className="h-[1px] bg-yellow"></div>
         </div>
         <a href="mailto:revans911@gmail.com">
-          <div className="lg:border-2 lg:border-yellow w-[48px] h-[48px] text-xl flex justify-center items-center brightness-75 text-blue hover:brightness-125 cursor-pointer">
+          <div className="lg:border-2 lg:border-yellow w-[48px] h-[48px] text-xl flex justify-center items-center brightness-75 text-blue hover:brightness-125 cursor-pointer rounded-md">
             <FaEnvelope />
           </div>
         </a>
