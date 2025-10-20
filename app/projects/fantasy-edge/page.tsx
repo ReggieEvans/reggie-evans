@@ -16,24 +16,44 @@ import Link from "next/link";
 
 const screenshots = [
   {
-    src: "/images/projects/gamestack/gamestack-screenshot-4.png",
+    src: "/images/projects/fantasy-edge/fantasy-edge_dashboard.png",
     alt: "Landing Page",
     caption: "Landing Page",
   },
   {
-    src: "/images/projects/gamestack/gamestack-screenshot-1.png",
-    alt: "Library Page",
-    caption: "Library Page",
+    src: "/images/projects/fantasy-edge/fantasy-edge_slate-manager.png",
+    alt: "Slate Manager",
+    caption: "Slate Manager",
   },
   {
-    src: "/images/projects/gamestack/gamestack-screenshot-2.png",
-    alt: "Game Details",
-    caption: "Game Details",
+    src: "/images/projects/fantasy-edge/fantasy-edge_matchups.png",
+    alt: "Matchups",
+    caption: "Matchups",
   },
   {
-    src: "/images/projects/gamestack/gamestack-screenshot-3.png",
-    alt: "Fully Responsive",
-    caption: "Fully Responsive",
+    src: "/images/projects/fantasy-edge/fantasy-edge_scouting.png",
+    alt: "Scouting",
+    caption: "Scouting",
+  },
+  {
+    src: "/images/projects/fantasy-edge/fantasy-edge_targeting.png",
+    alt: "Player Targeting",
+    caption: "Player Targeting",
+  },
+  {
+    src: "/images/projects/fantasy-edge/fantasy-edge_pool.png",
+    alt: "Player Pool",
+    caption: "Player Pool",
+  },
+  {
+    src: "/images/projects/fantasy-edge/fantasy-edge_study-hub.png",
+    alt: "Study Hub",
+    caption: "Study Hub",
+  },
+  {
+    src: "/images/projects/fantasy-edge/fantasy-edge_bankroll-tracker.png",
+    alt: "Bankroll Tracker",
+    caption: "Bankroll Tracker",
   },
 ];
 
@@ -73,7 +93,7 @@ const GameStackPage = () => {
             Back Home
           </Link>
           <Link
-            href={"/projects/my-dynasty-hub"}
+            href={"/projects/gamestack"}
             className="flex items-center gap-2 opacity-70 hover:text-blue hover:opacity-100 transition-all duration-300"
           >
             Next Project
@@ -88,7 +108,7 @@ const GameStackPage = () => {
           className="absolute top-0 left-0"
           style={{
             background:
-              "url('/images/projects/gamestack/gamestack-screenshot-1.png') no-repeat center center / cover",
+              "url('/images/projects/fantasy-edge/fantasy-edge_study-hub.png') no-repeat center center / cover",
             width: "100%",
             height: "100%",
             opacity: 0.1,
@@ -97,33 +117,31 @@ const GameStackPage = () => {
         ></div>
         <div className="mb-12">
           <Image
-            src="/images/projects/gamestack/logo-556-57.png"
-            alt="Game Stack Logo"
-            width={556}
-            height={57}
+            src="/images/projects/fantasy-edge/fantasy-edge-logo-300-91.png"
+            alt="Fantasy Edge Logo"
+            width={300}
+            height={91}
             className="mx-auto"
           />
         </div>
         <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
-          Video Game Backlog Tracker
+          Full Stack Fantasy Football App
         </h1>
         <p className="max-w-4xl text-lg mx-auto opacity-70">
-          A full-stack, modern web app for managing your personal game library.
-          Built with the latest in Next.js (App Router), MongoDB, and Tailwind
-          CSS — with authentication, game tracking, theming, and responsive UI.
+          A modern web app for building better fantasy football lineups.
+          Designed for speed, clarity, and iteration—pull in slates, study
+          matchups, grade players, build lineups, and track your bankroll. Built
+          with Next.js, Supabase, and a polished shadcn/ui interface.
         </p>
         <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
           <a
-            href="https://game-stack-taupe.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="http://reggieevans.me/projects/fantasy-edge#demo"
             className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
           >
-            <FaLink /> Live Demo
-            <FiExternalLink />
+            <FaLink /> Walkthrough Demo
           </a>
           <a
-            href="https://github.com/ReggieEvans/game-stack"
+            href="https://github.com/ReggieEvans/fantasy-edge"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
@@ -140,39 +158,92 @@ const GameStackPage = () => {
           Features
         </h2>
         <div className="grid md:grid-cols-3 gap-12">
-          <div className="space-y-4">
+          <div className="space-y-4 mb-12">
             <h3 className="text-2xl font-bold blue_gradient">
-              <span className="text-white">🎮</span> Game Library Management
+              <span className="text-white">📋</span> Slate Manager
             </h3>
             <div className="w-full bg-blue h-[1px] max-w-[200px] mx-auto"></div>
-
             <ul className="pl-6 list-none opacity-70">
-              <li>&bull; Add and manage games in your personal library</li>
-              <li>&bull; Track hours played, completion status, and more</li>
-              <li>&bull; View game summaries and screenshots</li>
+              <li>
+                &bull; Import DraftKings slates and normalize team/player names
+              </li>
+              <li>
+                &bull; Vegas integration: spreads, totals, implied team totals
+              </li>
+              <li>
+                &bull; One flow from contests → matchups → player pool → lineups
+              </li>
             </ul>
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl font-bold blue_gradient">
-              <span className="text-white">🔒</span> User Auth & Sessions
+              <span className="text-white">🔬</span> Scouting and Player Hub
             </h3>
             <div className="w-full bg-blue h-[1px] max-w-[200px] mx-auto"></div>
             <ul className="list-none pl-6 opacity-70">
-              <li>&bull; Secure email/password login</li>
-              <li>&bull; JWT authentication via HttpOnly cookies</li>
-              <li>&bull; Role-based access support</li>
+              <li>
+                &bull; Team pages with efficiency, usage, and matchup grades
+              </li>
+              <li>
+                &bull; Full rosters with sortable advanced stats (PFF, rates,
+                context)
+              </li>
+              <li>
+                &bull; Tag players (lock/like/fade) to build your player pool
+              </li>
             </ul>
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl font-bold blue_gradient">
-              <span className="text-white">🧰</span> Libraries
+              <span className="text-white">⚙️</span> Optimizer & Exports
             </h3>
             <div className="w-full bg-blue h-[1px] max-w-[200px] mx-auto"></div>
-
             <ul className="list-none pl-6 opacity-70">
-              <li>&bull; Tailwind CSS + dark/light theme support</li>
-              <li>&bull; Reusable shadcn/ui components</li>
-              <li>&bull; Form validation with Zod + React Hook Form</li>
+              <li>
+                &bull; Rule builder: stacks, exposures, salary bands, groups
+              </li>
+              <li>&bull; Generate multi-entry lineups for NFL + CFB</li>
+              <li>&bull; One-click CSV export formatted for DraftKings</li>
+            </ul>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-3 gap-12">
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold blue_gradient">
+              <span className="text-white">📚</span> Contest Study Hub
+            </h3>
+            <div className="w-full bg-blue h-[1px] max-w-[200px] mx-auto"></div>
+            <ul className="pl-6 list-none opacity-70">
+              <li>&bull; Import past entries; ownership vs. leverage views</li>
+              <li>&bull; Compare builds to top-1% lineups and winners</li>
+              <li>&bull; Identify repeatable edges by contest type</li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold blue_gradient">
+              <span className="text-white">📊</span> Bankroll Tracker
+            </h3>
+            <div className="w-full bg-blue h-[1px] max-w-[200px] mx-auto"></div>
+            <ul className="list-none pl-6 opacity-70">
+              <li>&bull; Track entries, ROI, and profit by slate/format</li>
+              <li>&bull; Filters for season, site, and contest type</li>
+              <li>&bull; Challenge modes (e.g., $400 → X) with trendlines</li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold blue_gradient">
+              <span className="text-white">⛏️</span> Pick’em
+            </h3>
+            <div className="w-full bg-blue h-[1px] max-w-[200px] mx-auto"></div>
+            <ul className="list-none pl-6 opacity-70">
+              <li>&bull; Import weekly games; auto-generate picks</li>
+              <li>
+                &bull; Factor in vegas lines and market trends to weight
+                confidence
+              </li>
+              <li>
+                &bull; Rank plays by edge tiers with suggested unit sizing
+              </li>
             </ul>
           </div>
         </div>
@@ -188,10 +259,10 @@ const GameStackPage = () => {
             <strong>Framework:</strong> Next.js 15 (App Router)
           </p>
           <p>
-            <strong>Database:</strong> MongoDB + Mongoose
+            <strong>Database:</strong> Supabase
           </p>
           <p>
-            <strong>Auth:</strong> JSON Web Tokens (JWT) + bcrypt
+            <strong>Auth:</strong> Supabase Auth
           </p>
           <p>
             <strong>Styling:</strong> Tailwind CSS, shadcn/ui
@@ -208,8 +279,21 @@ const GameStackPage = () => {
         </div>
       </section>
 
+      {/* Demo Section */}
+      <section
+        id="demo"
+        className="w-full text-font bg-dark/80 py-24 px-2 md:px-8"
+      >
+        <h2 className="text-3xl font-black text-center mb-12 uppercase text-white">
+          Walkthrough Demo
+        </h2>
+        <div className="flex flex-wrap justify-center gap-8 mb-40">
+          <h2 className="font-black text-2xl opacity-30">Coming Soon</h2>
+        </div>
+      </section>
+
       {/* Screenshots Section */}
-      <section className="w-full text-font bg-dark/80 py-24 px-2 md:px-8">
+      <section className="w-full text-font bg-dark py-24 px-2 md:px-8">
         <h2 className="text-3xl font-black text-center mb-12 uppercase text-white">
           Screenshots
         </h2>
