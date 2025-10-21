@@ -124,31 +124,33 @@ const GameStackPage = () => {
             className="mx-auto"
           />
         </div>
-        <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
-          Full Stack Fantasy Football App
-        </h1>
-        <p className="max-w-4xl text-lg mx-auto opacity-70">
-          A modern web app for building better fantasy football lineups.
-          Designed for speed, clarity, and iteration—pull in slates, study
-          matchups, grade players, build lineups, and track your bankroll. Built
-          with Next.js, Supabase, and a polished shadcn/ui interface.
-        </p>
-        <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
-          <a
-            href="http://reggieevans.me/projects/fantasy-edge#demo"
-            className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
-          >
-            <FaLink /> Walkthrough Demo
-          </a>
-          <a
-            href="https://github.com/ReggieEvans/fantasy-edge"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
-          >
-            <FaGithub /> Github Repo
-            <FiExternalLink />
-          </a>
+        <div className="relative">
+          <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
+            Full Stack Fantasy Football App
+          </h1>
+          <p className="max-w-4xl text-lg mx-auto opacity-70">
+            A modern web app for building better fantasy football lineups.
+            Designed for speed, clarity, and iteration—pull in slates, study
+            matchups, grade players, build lineups, and track your bankroll.
+            Built with Next.js, Supabase, and a polished shadcn/ui interface.
+          </p>
+          <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
+            <a
+              href="http://reggieevans.me/projects/fantasy-edge#demo"
+              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            >
+              <FaLink /> Walkthrough Demo
+            </a>
+            <a
+              href="https://github.com/ReggieEvans/fantasy-edge"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            >
+              <FaGithub /> Github Repo
+              <FiExternalLink />
+            </a>
+          </div>
         </div>
       </section>
 

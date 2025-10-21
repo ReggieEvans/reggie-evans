@@ -60,36 +60,38 @@ const StarterKitPage = () => {
             className="mx-auto rounded shadow"
           />
         </div>
-        <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
-          College Football 26 Team Picker App
-        </h1>
-        <p className="max-w-4xl text-lg mx-auto opacity-70">
-          Fun personal project built for the r/NCAAFBseries subreddit. Currently
-          this is just the first small feature of a much bigger project called
-          MyDynastyHub. It allows for people to find a random team to play with
-          based on twenty different filters, or by using preset filters. Built
-          this in about a week and received 1200+ views in the first two days
-          after deployment.
-        </p>
-        <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
-          <a
-            href="https://github.com/ReggieEvans/cfb26-team-picker"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
-          >
-            <FaGithub /> Github Repo
-            <FiExternalLink />
-          </a>
-          <a
-            href="https://mydynastyhub.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
-          >
-            <FaLink /> Live Website
-            <FiExternalLink />
-          </a>
+        <div className="relative">
+          <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
+            College Football 26 Team Picker App
+          </h1>
+          <p className="max-w-4xl text-lg mx-auto opacity-70">
+            Fun personal project built for the r/NCAAFBseries subreddit.
+            Currently this is just the first small feature of a much bigger
+            project called MyDynastyHub. It allows for people to find a random
+            team to play with based on twenty different filters, or by using
+            preset filters. Built this in about a week and received 1200+ views
+            in the first two days after deployment.
+          </p>
+          <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
+            <a
+              href="https://github.com/ReggieEvans/cfb26-team-picker"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            >
+              <FaGithub /> Github Repo
+              <FiExternalLink />
+            </a>
+            <a
+              href="https://mydynastyhub.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            >
+              <FaLink /> Live Website
+              <FiExternalLink />
+            </a>
+          </div>
         </div>
       </section>
 
