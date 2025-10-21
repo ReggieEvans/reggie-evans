@@ -104,33 +104,36 @@ const GameStackPage = () => {
             className="mx-auto"
           />
         </div>
-        <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
-          Video Game Backlog Tracker
-        </h1>
-        <p className="max-w-4xl text-lg mx-auto opacity-70">
-          A full-stack, modern web app for managing your personal game library.
-          Built with the latest in Next.js (App Router), MongoDB, and Tailwind
-          CSS — with authentication, game tracking, theming, and responsive UI.
-        </p>
-        <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
-          <a
-            href="https://game-stack-taupe.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
-          >
-            <FaLink /> Live Demo
-            <FiExternalLink />
-          </a>
-          <a
-            href="https://github.com/ReggieEvans/game-stack"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
-          >
-            <FaGithub /> Github Repo
-            <FiExternalLink />
-          </a>
+        <div className="relative">
+          <h1 className="text-3xl font-black uppercase text-center blue_gradient pb-4 mt-12">
+            Video Game Backlog Tracker
+          </h1>
+          <p className="max-w-4xl text-lg mx-auto opacity-70">
+            A full-stack, modern web app for managing your personal game
+            library. Built with the latest in Next.js (App Router), MongoDB, and
+            Tailwind CSS — with authentication, game tracking, theming, and
+            responsive UI.
+          </p>
+          <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
+            <a
+              href="https://game-stack-taupe.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            >
+              <FaLink /> Live Demo
+              <FiExternalLink />
+            </a>
+            <a
+              href="https://github.com/ReggieEvans/game-stack"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            >
+              <FaGithub /> Github Repo
+              <FiExternalLink />
+            </a>
+          </div>
         </div>
       </section>
 
