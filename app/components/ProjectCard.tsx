@@ -15,6 +15,7 @@ interface ProjectCardProps {
   liveLink?: string;
   walkthroughLink?: string;
   moreDetailsLink: string;
+  isExternalDemo: boolean;
 }
 
 type TechStackItem = {
@@ -34,6 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveLink,
   walkthroughLink,
   moreDetailsLink,
+  isExternalDemo,
 }) => {
   return (
     <div className="bg-dark shadow-lg rounded-md p-6 w-80">
@@ -89,7 +91,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {walkthroughLink && (
               <a
                 href={walkthroughLink}
-                target="_blank"
+                target={isExternalDemo ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-pink hover:text-red text-sm"
               >

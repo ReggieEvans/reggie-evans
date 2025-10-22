@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   FaArrowCircleLeft,
   FaArrowCircleRight,
@@ -58,6 +58,7 @@ const screenshots = [
 ];
 
 const GameStackPage = () => {
+  const demo = useRef<HTMLDivElement>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -76,6 +77,12 @@ const GameStackPage = () => {
 
   const showNext = () => {
     setCurrentIndex((prev) => (prev === screenshots.length - 1 ? 0 : prev + 1));
+  };
+
+  const scrollToElement = () => {
+    if (demo.current) {
+      demo.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -103,7 +110,7 @@ const GameStackPage = () => {
       </header>
 
       {/* Title Section */}
-      <section className="relative bg-dark py-24 px-2 md:px-8">
+      <section className="relative bg-dark py-40 px-2 md:px-8">
         <div
           className="absolute top-0 left-0"
           style={{
@@ -135,12 +142,12 @@ const GameStackPage = () => {
             Built with Next.js, Supabase, and a polished shadcn/ui interface.
           </p>
           <div className="flex flex-col items-center justify-center md:flex-row md:gap-12">
-            <a
-              href="http://reggieevans.me/projects/fantasy-edge#demo"
-              className="flex items-center gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
+            <span
+              onClick={scrollToElement}
+              className="flex items-center cursor-pointer gap-2 justify-center text-center mt-12 font-bold hover:underline text-blue-400 uppercase"
             >
               <FaLink /> Walkthrough Demo
-            </a>
+            </span>
             <a
               href="https://github.com/ReggieEvans/fantasy-edge"
               target="_blank"
@@ -284,13 +291,18 @@ const GameStackPage = () => {
       {/* Demo Section */}
       <section
         id="demo"
+        ref={demo}
         className="w-full text-font bg-dark/80 py-24 px-2 md:px-8"
       >
         <h2 className="text-3xl font-black text-center mb-12 uppercase text-white">
           Walkthrough Demo
         </h2>
-        <div className="flex flex-wrap justify-center gap-8 mb-40">
-          <h2 className="font-black text-2xl opacity-30">Coming Soon</h2>
+        <div className="flex flex-wrap justify-center gap-8 mb-24">
+          <div className="flex flex-col h-[400px] w-[800px] bg-gray-800 items-center justify-center rounded-lg shadow-lg">
+            <h2 className="font-black text-2xl text-gray-400">
+              I&apos;m working on it 🙂
+            </h2>
+          </div>
         </div>
       </section>
 
