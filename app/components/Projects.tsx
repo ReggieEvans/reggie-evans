@@ -22,6 +22,7 @@ const Connect = () => {
             githubLink="https://github.com/ReggieEvans/fantasy-edge"
             walkthroughLink="/projects/fantasy-edge#demo"
             moreDetailsLink="/projects/fantasy-edge"
+            isExternalDemo={false}
             stack={[
               { icon: FaReact, label: "React", color: "text-blue-400" },
               {
@@ -72,6 +73,7 @@ const Connect = () => {
             githubLink="https://github.com/ReggieEvans/game-stack"
             demoLink="https://game-stack-taupe.vercel.app/"
             moreDetailsLink="/projects/gamestack"
+            isExternalDemo={true}
           />
           <ProjectCard
             name="My Dynasty Hub"
@@ -98,6 +100,7 @@ const Connect = () => {
             githubLink="https://github.com/ReggieEvans/cfb26-team-picker"
             liveLink="https://mydynastyhub.com/"
             moreDetailsLink="/projects/my-dynasty-hub"
+            isExternalDemo={true}
           />
         </div>
       </div>

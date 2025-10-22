@@ -39,7 +39,7 @@ const StarterKitPage = () => {
       </header>
 
       {/* Title Section */}
-      <section className="relative bg-dark py-24 px-2 md:px-8">
+      <section className="relative bg-dark py-40 px-2 md:px-8">
         <div
           className="absolute top-0 left-0"
           style={{
