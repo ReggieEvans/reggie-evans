@@ -297,11 +297,16 @@ const GameStackPage = () => {
         <h2 className="text-3xl font-black text-center mb-12 uppercase text-white">
           Walkthrough Demo
         </h2>
-        <div className="flex flex-wrap justify-center gap-8 mb-24">
-          <div className="flex flex-col h-[400px] w-[800px] bg-gray-800 items-center justify-center rounded-lg shadow-lg">
-            <h2 className="font-black text-2xl text-gray-400">
-              I&apos;m working on it 🙂
-            </h2>
+        <div className="flex justify-center items-center max-w-4xl mx-auto">
+          <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/ErmsSeiQSnQ"
+              title="Fantasy Edge Walkthrough Demo"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen={true}
+              className="absolute top-0 left-0 w-full h-full border-0;"
+            ></iframe>
           </div>
         </div>
       </section>
