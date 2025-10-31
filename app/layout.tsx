@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import localfont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 import "./glitch.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${anotherDanger.className}} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
